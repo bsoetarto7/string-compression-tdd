@@ -42,4 +42,10 @@ describe('compression', () => {
       expect(results).toEqual('g1h1j1f2g1');
     });
   });
+  describe('when ghjffgsafdsadf is input string', () => {
+    it('should return value g1h1j1f2g1s1a1f1d1s1a1d1f1', () => {
+      const results = compression('ghjffgsafdsadf')
+      expect(results).toEqual('g1h1j1f2g1s1a1f1d1s1a1d1f1');
+    });
+  });
 })
