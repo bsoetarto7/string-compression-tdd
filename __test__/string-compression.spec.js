@@ -18,10 +18,10 @@ describe('compression', () => {
       expect(() => compression(345)).toThrow();
     });
   });
-  describe('when aaabbbccc is input string', () => {
-    it('should return value a3b3c3', () => {
-      const results = compression('aaabbbccc')
-      expect(results).toEqual('a3b3c3');
+  describe('when aaabbbcccd is input string', () => {
+    it('should return value a3b3c3d1', () => {
+      const results = compression('aaabbbcccd')
+      expect(results).toEqual('a3b3c3d1');
     });
   });
 })
