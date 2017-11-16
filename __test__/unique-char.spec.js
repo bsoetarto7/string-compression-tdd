@@ -12,4 +12,10 @@ describe('Unique Characters', () => {
       expect(() => uniqueChar(345)).toThrow();
     });
   });
+  describe('when input is dddeeefggghhh', () => {
+    it('should return f', () => {
+      const result = uniqueChar('dddeeefggghhh');
+      expect(result).toEqual('f');
+    });
+  });
 })
